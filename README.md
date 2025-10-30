@@ -3,9 +3,9 @@
 
 | Name | Task | Time |
 |----------|----------|----------|
-| Alex Ukkonen | Task | h |
-| Mikael Korhonen | Task | h |
-| Jaakko Kostet | Task | h |
+| Alex Ukkonen | Task 1 | 2:30h |
+| Mikael Korhonen | Task 1 | 2:30h |
+| Jaakko Kostet | Task 1 | 2:30h |
 
 
 ## Requierments (notes)
