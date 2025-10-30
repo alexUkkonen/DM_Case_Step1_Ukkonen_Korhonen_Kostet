@@ -57,8 +57,15 @@ Attributes:
 
 Relationship:
 
-Many-to-many relationship with Venue & Artist.
-One-to-one relationship with Booking & Ticket.
+Event is in a **N:M** relationship with Venue & Artist and **1:1** relationship with Booking & Ticket.
+
+Event **N:M** Venue
+
+Event **N:M** Artist
+
+Event **1:1** Booking
+
+Event **1:1** Ticket
 
 ### Venue
 Description: 
@@ -94,4 +101,6 @@ Attributes:
 
 Relationship:
 
-Many-to-many relationship with Event through artist_id column.
+Artist is in **N:M** relationship with Event.
+
+Artist **N:M** Event
