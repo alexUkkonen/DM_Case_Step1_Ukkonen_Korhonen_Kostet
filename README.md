@@ -10,21 +10,27 @@
 
 ## Requierments (notes)
 
-* event type
-* booking at least 4 days before
-* payment in person
-* multiple venues
-  *  different sizes
-*  price
+* Event type
+  * Name
+  * Price
+* Venue
+  * name?
+  * multiple
+  * different size
+* Artists
+  * Multiple in one event
+  * Artist notes
+  * Contact info
+  * catering requests
+* Booking
+  * booking at least 4 days before
+  * unique booking nr.
+  * Only one event per booking
+  * payment in person
+  *  price
 *  Overbooking not allowed
-*  many artists one event
-*  Artist notes
-  *  Contact info
-  *  catering requests
 *  Client
   *  Phone nr.
-* unique booking nr.
-* Only one event per booking
 * can edit ticket amount unless paid
 * Refunds for cancelled events collected in person
 
