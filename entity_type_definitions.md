@@ -59,13 +59,13 @@ Relationship:
 
 Event is in a **N:M** relationship with Venue & Artist and **1:1** relationship with Booking & Ticket.
 
-Event **N:M** Venue
+Event **N:1** Venue
 
 Event **N:M** Artist
 
-Event **1:1** Booking
+Event **1:N** Booking
 
-Event **1:1** Ticket
+Event **1:N** Ticket
 
 ### Venue
 Description: 
