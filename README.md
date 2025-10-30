@@ -18,6 +18,7 @@
   * multiple
   * different size
 * Artists
+  * email
   * Multiple in one event
   * Artist notes
   * Contact info
@@ -34,6 +35,27 @@
 * can edit ticket amount unless paid
 * Refunds for cancelled events collected in person
 
+## Functional requirements (notes)
+* booking tickets
+* changing ticket amount
+* changing status to sold
+* cancelling a booking (before payment)
+* cleanup unpaid tickets afther 3 days
+* refund in person if neccecary
+
+#### Performance
+
+* artists
+* date
+* venue
+* catering info (staf)
+
+#### Shedule
+
+* upcoming events/performances
+* tickets sold to x performance (client: tickets left) (staf: tickets sold and tickets left)
+
+#### Revenue
 
 ## Not needed (Notes)
 
@@ -42,3 +64,5 @@
 *  same price per event
 *  once paid, permanent and unchanging unless event canceled
 *  
+
+
