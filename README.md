@@ -1,1 +1,8 @@
-# DM_Case_Step1_Ukkonen_Korhonen_Kostet
+
+
+
+| Name | Task | Time |
+|----------|----------|----------|
+| Alex Ukkonen | Task | h |
+| Mikael Korhonen | Task | h |
+| Jaakko Kostet | Task | h |
