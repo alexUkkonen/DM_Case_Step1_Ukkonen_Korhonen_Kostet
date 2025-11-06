@@ -1,6 +1,8 @@
-> Booking (***booking_nr***, price, event_id, phone_nr, status, availability, ticket_amount)
+> Booking (***booking_nr***, price, event_id, phone_nr, ticket_amount, status_id)
 
 >> FK (event_id) REFERENCES Event(event_id)
+
+>> FK (status_id) REFERENCES TicketStatus (status_id) 
 
 > Event (***event_id***, event_date, event_type, event_description, venue_id, artist_id)
 
@@ -12,4 +14,4 @@
 
 > Artist (***artist_id***, email, stage_name, catering_requests, notes)
 
-> TicketStatus (***booking_nr***, status, availability)
+> TicketStatus (***status_id***, status, availability)
