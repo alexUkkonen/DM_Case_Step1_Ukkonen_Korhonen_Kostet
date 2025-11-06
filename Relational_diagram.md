@@ -1,3 +1,5 @@
+> TicketStatus (***status_id***, status, availability)
+
 > Booking (***booking_nr***, price, event_id, phone_nr, ticket_amount, status_id)
 
 >> FK (event_id) REFERENCES Event(event_id)
@@ -13,5 +15,3 @@
 > Venue(***venue_id***, venue_name, capacity, address)
 
 > Artist (***artist_id***, email, stage_name, catering_requests, notes)
-
-> TicketStatus (***status_id***, status, availability)
