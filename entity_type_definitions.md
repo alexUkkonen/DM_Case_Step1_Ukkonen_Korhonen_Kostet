@@ -16,7 +16,9 @@ Attributes:
 
 Relationship:
 
-Booking is in  a **N:1** relationship with Event
+Booking is in  a **N:1** relationship with Event and a **N:1** relationship with TicketStatus
+
+Booking **1:N** Event
 
 Booking **N:1** Event
 
@@ -33,9 +35,11 @@ Attributes:
 
 Relationship:
 
-TicketStatus is in a 1:1 relationship with Booking
+TicketStatus is in a **1:N** relationship with Booking and a **N:1** relationship with Event
 
-TicketStatus 1:1 Booking
+TicketStatus **1:N** Booking
+
+TicketStatus **N:1** Event
 
 ### Event
 Description: 
@@ -50,17 +54,18 @@ Attributes:
 * event_description
 * venue_id (FK)
 * artist_id (FK)
-* slots (FK)
 
 Relationship:
 
-Event is in a **N:M** relationship with Venue & Artist and **1:1** relationship with Booking & Ticket.
+Event is in a **N:M** relationship with Venue & Artist and a **1:N**¨relationship with TicketStatus and **1:1** relationship with Booking & Ticket.
 
 Event **N:1** Venue
 
 Event **N:M** Artist
 
 Event **1:N** Booking
+
+Event **1:N** TicketStatus
 
 ### Venue
 Description: 
