@@ -1,23 +1,41 @@
 ### Booking
 Description: 
 
-Collection of tickets booked. Once ticekts are booked corresponding amount is reduced from slots.
+Collection of tickets booked. ```SUM(ticket_amount) GROUP BY Event``` is compared to capacity.
 
 Attributes:
 
-* booking_nr (Primary key)
+* booking_nr (PK)
 * price
-* event_id (Foreign key)
+* event_id (FK)
 * phone_nr
 * status
 * availability
 * ticekt_amount
+* status_id (FK)
 
 Relationship:
 
 Booking is in  a **N:1** relationship with Event
 
 Booking **N:1** Event
+
+### TicketStatus
+Description: 
+
+The status and availability of tickets for any given event.
+
+Attributes:
+
+* status_id (PK)
+* status
+* availability
+
+Relationship:
+
+TicketStatus is in a 1:1 relationship with Booking
+
+TicketStatus 1:1 Booking
 
 ### Event
 Description: 
