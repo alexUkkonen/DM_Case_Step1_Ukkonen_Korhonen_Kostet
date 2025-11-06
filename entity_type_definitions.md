@@ -1,28 +1,7 @@
-
-### Ticket
-Description: 
-
-An individual slot that counts towards max capacity
-
-Attributes:
-
-* ticket_id (Primary key)
-* price
-* event_id (Foreign key)
-* availability
-
-Relationship:
-
-Tickets are linked to events in a **N:1** relationship and linked to booking in a **N:1** relationship.
-
-Tickets **N:1** Event
-
-Ticekts **N:1** Booking
-
 ### Booking
 Description: 
 
-A collection of selected tickets. Once booked tickets with a corresponding ID are no longer availible.
+Collection of tickets booked. Once ticekts are booked corresponding amount is reduced from slots.
 
 Attributes:
 
@@ -31,13 +10,12 @@ Attributes:
 * event_id (Foreign key)
 * phone_nr
 * status
-* ticket_id (FK)
+* availability
+* ticekt_amount
 
 Relationship:
 
-Booking is in a **1:N** relationship with Tickets and a **N:1** relationship with Event
-
-Booking **1:N** Ticket
+Booking is in  a **N:1** relationship with Event
 
 Booking **N:1** Event
 
@@ -54,6 +32,7 @@ Attributes:
 * event_description
 * venue_id (FK)
 * artist_id (FK)
+* slots (FK)
 
 Relationship:
 
@@ -64,8 +43,6 @@ Event **N:1** Venue
 Event **N:M** Artist
 
 Event **1:N** Booking
-
-Event **1:N** Ticket
 
 ### Venue
 Description: 
@@ -94,8 +71,7 @@ Attributes:
 
 * artist_id (PK)
 * email
-* given_name
-* surname
+* stage_name
 * catering_requests
 * notes
 
