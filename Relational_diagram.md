@@ -13,5 +13,3 @@
 > Artist (***artist_id***, email, stage_name, catering_requests, notes)
 
 > TicketStatus (***booking_nr***, status, availability)
-
->> FK (booking_nr) REFERENCES Booking (booking_nr)
