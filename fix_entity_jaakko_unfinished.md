@@ -3,7 +3,7 @@ fix entity
 # Entity Type Definitions – Greenwood Cultural Association
 
 ## Venue
-**Description:** Tapahtumapaikka ja sen kapasiteetti.
+**Description:** Event location and capacity.
 **Attributes:**
 - venue_id (PK)
 - venue_name (NOT NULL)
@@ -15,7 +15,7 @@ fix entity
 ---
 
 ## Artist
-**Description:** Yksittäinen esiintyjä tai yhtye.
+**Description:** Single Artist or group.
 **Attributes:**
 - artist_id (PK)
 - name (UNIQUE, esiintymisnimi; vaihtoehtoisesti given_name + surname)
@@ -28,7 +28,7 @@ fix entity
 ---
 
 ## Event
-**Description:** Yleisötapahtuma, jossa voi esiintyä useita artisteja ja joka järjestetään yhdessä tietyssä paikassa.
+**Description:** An event where multiple artists can perform and which is organized in a specific location.
 **Attributes:**
 - event_id (PK)
 - title (NOT NULL)
@@ -58,7 +58,7 @@ fix entity
 ---
 
 ## Booking
-**Description:** Varauksen yhteenveto yhdelle eventille; sisältää lippujen lukumäärän, ei yksittäisiä lippuja.
+**Description:** A booking summary for a single event. Includes the number of tickets, not individual tickets.
 **Attributes:**
 - booking_nr (PK)
 - booking_code (UNIQUE)  -- asiakkaalle annettava koodi
@@ -77,5 +77,5 @@ fix entity
 
 ---
 
-## Poistetut/korvatut käsitteet
-- **Ticket**: poistettu. Yksittäisiä lippuja ei tallenneta (tehtävän vaatimus). Liput mallinnetaan varauksen **määränä** (Booking.ticket_qty). Kaikille lipuille **sama hinta** tulee Event.price:sta.
+## Removed/Replaced
+- **Ticket**: Removed. Individual tickets are not stored (requirement of the task). Tickets are modeled as a quantity in the booking (Booking.ticket_qty). All tickets will have the same price, which comes from Event.price.
