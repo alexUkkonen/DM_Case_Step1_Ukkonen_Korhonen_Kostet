@@ -49,4 +49,4 @@ status → availability
 
 **Candidate keys:** status_id, status
 
-**BCNF:** Satisfied – all attributes depend on candidate keys.
+**BCNF:** Satisfied
