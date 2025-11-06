@@ -22,7 +22,7 @@ name → artist_id (since name is unique)
 
 ### Event
 **Functional dependencies:**  
-event_id → title, event_date, event_type, event_description, venue_id, price, status, category
+event_id → event_date, event_type, event_description, venue_id, artist_id
 
 **Candidate key:** event_id  
 **BCNF:** Satisfied – all non-trivial dependencies are from the primary key.
