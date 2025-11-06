@@ -2,13 +2,11 @@
 
 >> FK (event_id) REFERENCES Event(event_id)
 
-> Event (***event_id***, event_date, event_type, event_description, venue_id, artist_id, capacity)
+> Event (***event_id***, event_date, event_type, event_description, venue_id, artist_id)
 
 >> FK (venue_id) REFERENCES Venue (venue_id)
 
 >> FK (artist_id) REFERENCES Artist (artist_id)
-
->> FK (capacity) REFERENCES Venue (capacity)
 
 > Venue(***venue_id***, venue_name, capacity, address)
 
