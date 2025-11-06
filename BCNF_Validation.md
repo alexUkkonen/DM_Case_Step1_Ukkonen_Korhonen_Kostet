@@ -6,6 +6,7 @@ venue_id → venue_name, address, capacity
 (name, address) → venue_id, capacity  
 
 **Candidate keys:** venue_id; (venue_name, address)  
+
 **BCNF:** Satisfied – all non-trivial FDs originate from candidate keys.
 
 ---
@@ -16,6 +17,7 @@ artist_id → stage_name, email, phone, catering_requests, notes
 name → artist_id (since name is unique)
 
 **Candidate keys:** artist_id 
+
 **BCNF:** Satisfied.
 
 ---
@@ -25,6 +27,7 @@ name → artist_id (since name is unique)
 event_id → event_date, event_type, event_description, venue_id, artist_id
 
 **Candidate key:** event_id  
+
 **BCNF:** Satisfied – all non-trivial dependencies are from the primary key.
 
 ---
@@ -34,6 +37,7 @@ event_id → event_date, event_type, event_description, venue_id, artist_id
 booking_nr → event_id, phone_nr, ticket_amount, status, price  
 
 **Candidate keys:** booking_nr
+
 **BCNF:** Satisfied – all attributes depend on candidate keys.
 
 ---
@@ -44,4 +48,5 @@ status_id → availability, status
 status → availability
 
 **Candidate keys:** status_id, status
+
 **BCNF:** Satisfied – all attributes depend on candidate keys.
