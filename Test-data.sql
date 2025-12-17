@@ -11,7 +11,12 @@ INSERT INTO Artist (email, stage_name, catering_requests, notes) VALUES
 ('magic.mike@performer.net', 'Mystic Mike', 'Sandwiches (no crusts), Coffee', 'Childrens magician. Needs backstage prep area.'),
 ('rock.legends@band.com', 'Granite Hills', 'Beer (Local IPA), Pizza, Towels', 'Popular regional rock band. Loud.'),
 ('theater.group@greenwood.org', 'Greenwood Players', 'Tea, throat lozenges', 'Local theater troupe doing Shakespeare.'),
-('symphony@city.com', 'City Chamber Orchestra', 'Bottled water (room temp)', 'Requires 20 chairs on stage.');
+('symphony@city.com', 'City Chamber Orchestra', 'Bottled water (room temp)', 'Requires 20 chairs on stage.')
+('Taylor Swift', 'taylor.management@swift.com', 'Iced Americano, fresh flowers'),
+('Billie Eilish', 'billie@eilish.com', 'Vegan snacks, organic ginger ale'),
+('Imagine Dragons', 'contact@dragons.com', 'High protein platter, electrolyte water'),
+('The Weeknd', 'abel@xo.com', 'Black coffee, room temp water'),
+('Harry Styles', 'harry@styles.com', 'Tea station, sushi platter');
 
 
 -- 3. TICKETSTATUS Table
@@ -28,7 +33,12 @@ INSERT INTO Event (event_date, event_type, event_description, venue_id, artist_i
 ('2025-06-15 14:00:00', 'Magic Show', 'Mystic Mike: Magic for all ages', 2, 2, 1),              -- Hall
 ('2025-07-20 20:00:00', 'Rock Concert', 'Granite Hills Summer Bash', 3, 3, 1),                    -- Auditorium
 ('2025-08-05 18:00:00', 'Theater', 'Hamlet in the Park (Indoors)', 2, 4, 1),                      -- Hall
-('2025-09-01 19:00:00', 'Classical', 'Fall Overture', 3, 5, 4);                                   -- Auditorium, CANCELLED
+('2025-09-01 19:00:00', 'Classical', 'Fall Overture', 3, 5, 4)
+('2025-11-30', 'Jazz Night', 2, (SELECT artist_id FROM Artist WHERE stage_name = 'Taylor Swift'), 1), -- (Just for the query match)
+('2026-03-25', 'Concert', 3, (SELECT artist_id FROM Artist WHERE stage_name = 'Billie Eilish'), 1),
+('2025-07-15', 'Concert', 3, (SELECT artist_id FROM Artist WHERE stage_name = 'Imagine Dragons'), 1),
+('2026-02-05', 'Concert', 3, (SELECT artist_id FROM Artist WHERE stage_name = 'The Weeknd'), 1),
+('2025-09-12', 'Concert', 3, (SELECT artist_id FROM Artist WHERE stage_name = 'Harry Styles'), 1);                                   -- Auditorium, CANCELLED
 
 -- 5. BOOKING Table
 INSERT INTO Booking (price, event_id, phone_nr, ticket_amount, status_id) VALUES
@@ -48,6 +58,14 @@ INSERT INTO Booking (price, event_id, phone_nr, ticket_amount, status_id) VALUES
 
 -- Event 5: Cancelled Event, Price 40.00€
 (40.00, 5, '555-0501', 2, 4), -- Event Cancelled status
-(40.00, 5, '555-0502', 4, 4); -- Event Cancelled status
+(40.00, 5, '555-0502', 4, 4) -- Event Cancelled status
+
+-- The Weeknd (Event for Q7)
+(100.00, (SELECT event_id FROM Event WHERE event_date = '2026-02-05'), 200, 2), -- 200 tickets Paid
+(100.00, (SELECT event_id FROM Event WHERE event_date = '2026-02-05'), 50, 2),  -- 50 tickets Paid
+
+-- Harry Styles (Event for Q8)
+(120.00, (SELECT event_id FROM Event WHERE event_date = '2025-09-12'), 500, 2); -- 500 tickets Paid (Venue cap is 600)
 
 GO
+
