@@ -2,7 +2,7 @@
 
 ## 1. To what extent does the product fulfil the given requirements? * Please indicate if any component is missing or if any tests are not functioning properly.
 
-As far as we can se the only thing incompleate is the test data as we lack dance events.
+As far as we can see the only thing incomplete is the test data as we lack dance events.
 
 ## 2. What aspects of the project were successful? What challenges were encountered?
 
