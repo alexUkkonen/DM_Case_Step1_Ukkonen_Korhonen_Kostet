@@ -18,9 +18,9 @@ write here
 
 | Name | Task | Time |
 |----------|----------|----------|
-| Alex Ukkonen | Task 1 + STEP 3 | 4h 30min |
-| Mikael Korhonen | Task 1 + STEP 3 | 4h 30min |
-| Jaakko Kostet | Task 1 + STEP 3| 4h 30 min |
+| Alex Ukkonen | STEP 1 + STEP 3 | 4h 30min |
+| Mikael Korhonen | STEP 1 + STEP 3 | 4h 30min |
+| Jaakko Kostet | STEP 1 + STEP 3| 4h 30 min |
 
 ## Part 2
 
