@@ -11,3 +11,11 @@ write here
 ## 3. What lessons were learned from this project?? What will we do better next time? In your report, ensure to include the working time records categorized by person and task.
 
 write here
+
+
+
+| Name | Task | Time |
+|----------|----------|----------|
+| Alex Ukkonen | Task 1 | 4h |
+| Mikael Korhonen | Task 1 | 4h |
+| Jaakko Kostet | Task 1 | 4h |
