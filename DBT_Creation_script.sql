@@ -48,7 +48,7 @@ CREATE TABLE Event (
         REFERENCES TicketStatus(status_id)
 );
 
--- 7. Create Booking Table
+-- 7 Create Booking Table
 CREATE TABLE Booking (
     booking_nr INT IDENTITY(1,1) PRIMARY KEY,
     price DECIMAL(10, 2) NOT NULL,
@@ -62,3 +62,4 @@ CREATE TABLE Booking (
     CONSTRAINT FK_Booking_Status FOREIGN KEY (status_id) 
         REFERENCES TicketStatus(status_id)
 );
+
