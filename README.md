@@ -7,7 +7,7 @@
 | Mikael Korhonen | Task 1 + STEP 3 | 4h 30min |
 | Jaakko Kostet | Task 1 + STEP 3| 4h 30 min |
 
-## Part 2 and 3 time
+## Part 2
 
 | Name | Task | Time |
 |----------|----------|----------|
