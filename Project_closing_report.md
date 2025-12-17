@@ -2,15 +2,15 @@
 
 ## 1. To what extent does the product fulfil the given requirements? * Please indicate if any component is missing or if any tests are not functioning properly.
 
-write here
+As far as we can se the only thing incompleate is the test data as we lack dance events.
 
 ## 2. What aspects of the project were successful? What challenges were encountered?
 
-write here
+We suffered from critical Skill issue. We also didn't manage our time well and ended up being late.
 
 ## 3. What lessons were learned from this project?? What will we do better next time? In your report, ensure to include the working time records categorized by person and task.
 
-write here
+Do the work, delegate tasks over text so we can work more efficiently. Doing this might allow us to compleate the next assignment on time.
 
 
 
